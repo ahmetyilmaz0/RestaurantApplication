@@ -32,8 +32,12 @@
                 <Label BorderBrush="Black" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" Foreground="White">Görsel Tasarım III ResApp</Label>
             </StackPanel>
         </Border>
-        <Grid >
-
+        <Grid RenderTransformOrigin="0.5,0.5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Frame Background="AliceBlue" Grid.Row="0" Name="MainFrame" NavigationUIVisibility="Hidden" Grid.RowSpan="2"/>
         </Grid>
     </DockPanel>
     
